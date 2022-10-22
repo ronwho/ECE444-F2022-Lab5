@@ -10,21 +10,24 @@
 <h1 style="text-align: center">Education Pathways</h1>
 
 <body>
+    <h3>"Search for courses"</h3>
     {% from "_formhelpers.html" import render_field %}
-    <form method="post">
+    <form class="common-page-form" method="post">
       <dl>
         {{ render_field(form.select) }}
         <p>
-          Restrict by one of: {{ render_field(form.divisions) }} or {{ render_field(form.departments) }} or {{ render_field(form.campuses) }}
+            Restrict by one of: {{ render_field(form.divisions) }} or {{ render_field(form.departments) }} or {{ render_field(form.campuses) }}
         </p> 
         <p>
         {{ render_field(form.search) }}
       </p></dl>
-      <p>{{render_field(form.top)}} <input type="submit" value="Search">
-      </p></form>
-    
+      <p>{{render_field(form.top)}} <button type="submit" class="btn btn-primary common-page-submit-btn" value="Search">Search</button>
+    </p></form>
+    <h3>"Search Results"</h3>
+<div id="result-page-table-container">
 {% for table in tables %}
             {{ table|safe }}
 {% endfor %}
+</div>
 </body>
 </html>
