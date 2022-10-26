@@ -3,6 +3,11 @@
 ## This is a clone of https://github.com/nelaturuk/education_pathways. 
 ## Ron Hu and Malhar Shah
 
+## Activity 1
+![Screenshot of Activity 1](/images/Activity1.jpg)
+
+## Activity 2 to Activity 5:
+
 
 ## Description
 Welcome to CARTE's in-development tool for course selection at UofT. Education Pathways allows for more intelligent course searching, by matching not just the terms you search, but ones relevant to them. The more terms you search for, the more relevant your results will be! Even try searching across disciplines for the courses that best cover each.
